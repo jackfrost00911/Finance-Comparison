@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Credit card rewards calculator 2025: Compare cash back and points across multiple cards. Find which card earns you the most based on your spending.">
+    <meta name="keywords" content="credit card rewards calculator, cash back calculator, points calculator, best card for my spending">
+    <title>Credit Card Rewards Calculator - Find Your Best Card</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        .calculator-container {
+            background: #fff;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        .input-group {
+            margin-bottom: 25px;
+        }
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
+        }
+        .input-group input:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+        .calculate-btn {
+            background: #3b82f6;
+            color: white;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+        .calculate-btn:hover {
+            background: #2563eb;
+        }
+        .results-container {
+            display: none;
+            margin-top: 40px;
+        }
+        .card-result {
+            background: #f9fafb;
+            border-left: 4px solid #3b82f6;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .card-result.winner {
+            background: #dcfce7;
+            border-left-color: #16a34a;
+        }
+        .card-result h3 {
+            margin: 0 0 10px 0;
+            color: #1f2937;
+            font-size: 1.3rem;
+        }
+        .card-result .rewards {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #16a34a;
+            margin: 10px 0;
+        }
+        .card-result .breakdown {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 10px;
+        }
+        .winner-badge {
+            display: inline-block;
+            background: #16a34a;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        .input-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .input-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1><a href="/Finance-Comparison/" style="color: inherit; text-decoration: none;">CardMatch</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/Finance-Comparison/">Home</a></li>
+                <li><a href="/Finance-Comparison/cashback-cards/">Cash Back</a></li>
+                <li><a href="/Finance-Comparison/travel-cards/">Travel Rewards</a></li>
+                <li><a href="/Finance-Comparison/reviews/">Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 900px; margin: 60px auto; padding: 40px 20px;">
+
+        <h1 style="font-size: 2.5rem; margin-bottom: 20px; color: #1f2937;">Credit Card Rewards Calculator</h1>
+        <p style="font-size: 1.1rem; color: #6b7280; margin-bottom: 40px;">Find out which card actually earns you the most based on your real spending</p>
+
+        <div style="background: #f0f9ff; border-left: 4px solid #3b82f6; padding: 25px; border-radius: 8px; margin-bottom: 40px;">
+            <p style="line-height: 1.8; color: #1e3a8a;">
+                Most people pick credit cards based on vibes and marketing. This calculator does the math for you. Enter your monthly spending in each category, and we'll tell you which card gives you the most cash back or points. Spoiler: it's probably not the one with the flashiest sign-up bonus.
+            </p>
+        </div>
+
+        <div class="calculator-container">
+            <h2 style="margin-top: 0; color: #1f2937;">Enter Your Monthly Spending</h2>
+            <p style="color: #6b7280; margin-bottom: 30px;">Be honest. We're not judging your DoorDash habit.</p>
+
+            <form id="calculator-form">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="dining">🍔 Dining & Restaurants</label>
+                        <input type="number" id="dining" placeholder="$500" min="0" value="500">
+                    </div>
+                    <div class="input-group">
+                        <label for="groceries">🛒 Groceries</label>
+                        <input type="number" id="groceries" placeholder="$400" min="0" value="400">
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="gas">⛽ Gas & Transportation</label>
+                        <input type="number" id="gas" placeholder="$200" min="0" value="200">
+                    </div>
+                    <div class="input-group">
+                        <label for="travel">✈️ Travel (flights, hotels, etc.)</label>
+                        <input type="number" id="travel" placeholder="$300" min="0" value="300">
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="online">📦 Online Shopping (Amazon, etc.)</label>
+                        <input type="number" id="online" placeholder="$300" min="0" value="300">
+                    </div>
+                    <div class="input-group">
+                        <label for="other">💳 Everything Else</label>
+                        <input type="number" id="other" placeholder="$500" min="0" value="500">
+                    </div>
+                </div>
+
+                <button type="submit" class="calculate-btn">Calculate My Best Card →</button>
+            </form>
+        </div>
+
+        <div class="results-container" id="results">
+            <h2 style="color: #1f2937; margin-bottom: 30px;">Your Results: Annual Rewards Breakdown</h2>
+            <div id="results-cards"></div>
+
+            <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; border-radius: 8px; margin-top: 30px;">
+                <p style="line-height: 1.8; color: #92400e; margin: 0;">
+                    <strong>Remember:</strong> These calculations don't include sign-up bonuses (which are one-time) or annual fees. Factor those in when making your final decision. Also, life's too short to optimize every dollar—pick a card you'll actually remember to use.
+                </p>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px;">
+            <h2 style="color: #1f2937; margin-bottom: 20px;">How This Calculator Works</h2>
+            <p style="line-height: 1.8; color: #374151; margin-bottom: 15px;">
+                We take your monthly spending in each category and multiply it by the earning rates of popular credit cards. Then we show you which card earns you the most over a year. Simple math that most people don't do before getting a card.
+            </p>
+            <p style="line-height: 1.8; color: #374151; margin-bottom: 40px;">
+                <strong>Cards included:</strong> Chase Sapphire Preferred, Amex Gold, Citi Double Cash, Discover it Cash Back, Chase Freedom Unlimited, Capital One Venture X, and more. We update these regularly to reflect current offers.
+            </p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">&copy; 2025 CardMatch. All rights reserved. | 
+            <a href="/Finance-Comparison/privacy.html" style="color: inherit;">Privacy</a> | 
+            <a href="/Finance-Comparison/terms.html" style="color: inherit;">Terms</a> | 
+            <a href="/Finance-Comparison/disclosure.html" style="color: inherit;">Disclosure</a></p>
+        </div>
+    </footer>
+<script>
+        document.getElementById('calculator-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get input values
+            const dining = parseFloat(document.getElementById('dining').value) || 0;
+            const groceries = parseFloat(document.getElementById('groceries').value) || 0;
+            const gas = parseFloat(document.getElementById('gas').value) || 0;
+            const travel = parseFloat(document.getElementById('travel').value) || 0;
+            const online = parseFloat(document.getElementById('online').value) || 0;
+            const other = parseFloat(document.getElementById('other').value) || 0;
+
+            // Card earning calculations (monthly then annualized)
+            const cards = [
+                {
+                    name: 'Amex Gold',
+                    rewards: ((dining * 4) + (groceries * 4) + (travel * 3) + (gas * 1) + (online * 1) + (other * 1)) * 12,
+                    breakdown: `${dining * 4 * 12} pts from dining (4x), ${groceries * 4 * 12} pts from groceries (4x)`
+                },
+                {
+                    name: 'Chase Sapphire Preferred',
+                    rewards: ((dining * 3) + (travel * 5) + (groceries * 1) + (gas * 1) + (online * 1) + (other * 1)) * 12,
+                    breakdown: `${dining * 3 * 12} pts from dining (3x), ${travel * 5 * 12} pts from travel (5x)`
+                },
+                {
+                    name: 'Citi Double Cash',
+                    rewards: ((dining + groceries + gas + travel + online + other) * 2) * 12,
+                    breakdown: `Flat 2% on everything = simple and effective`
+                },
+                {
+                    name: 'Chase Freedom Unlimited',
+                    rewards: ((dining * 3) + (travel * 5) + (groceries * 1.5) + (gas * 1.5) + (online * 1.5) + (other * 1.5)) * 12,
+                    breakdown: `${dining * 3 * 12} pts from dining (3x), ${travel * 5 * 12} pts from travel (5x), 1.5x on everything else`
+                },
+                {
+                    name: 'Capital One Venture X',
+                    rewards: ((travel * 10) + (dining * 2) + (groceries * 2) + (gas * 2) + (online * 2) + (other * 2)) * 12,
+                    breakdown: `${travel * 10 * 12} pts from travel (10x), 2x on everything else`
+                },
+                {
+                    name: 'Discover it Cash Back (Year 1)',
+                    rewards: ((gas * 5 * 2) + (groceries * 5 * 2) + (online * 5 * 2) + (dining * 1 * 2) + (travel * 1 * 2) + (other * 1 * 2)) * 3,
+                    breakdown: `5% rotating categories doubled = 10% effective first year`
+                }
+            ];
+
+            // Sort by rewards (highest first)
+            cards.sort((a, b) => b.rewards - a.rewards);
+
+            // Display results
+            const resultsContainer = document.getElementById('results-cards');
+            resultsContainer.innerHTML = '';
+
+            cards.forEach((card, index) => {
+                const cardDiv = document.createElement('div');
+                cardDiv.className = 'card-result' + (index === 0 ? ' winner' : '');
+                cardDiv.innerHTML = `
+                    <h3>${card.name}${index === 0 ? '<span class="winner-badge">🏆 BEST FOR YOU</span>' : ''}</h3>
+                    <div class="rewards">$${card.rewards.toFixed(0)} per year</div>
+                    <div class="breakdown">${card.breakdown}</div>
+                `;
+                resultsContainer.appendChild(cardDiv);
+            });
+
+            // Show results
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    </script>
+
+</body>
+</html>
