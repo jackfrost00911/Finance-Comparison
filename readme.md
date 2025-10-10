@@ -1,4 +1,4 @@
-# Finance Comparison Website - CardMatch
+# Finance Comparison Website - CardSnark
 
 A professional credit card comparison website built with HTML, CSS, and JavaScript. Optimized for SEO and affiliate marketing.
 
@@ -32,7 +32,7 @@ A professional credit card comparison website built with HTML, CSS, and JavaScri
 
 1. **Create a new repository on GitHub**
    - Go to github.com and create a new repository
-   - Name it something like `cardmatch` or `credit-cards`
+   - Name it something like `cardsnark` or `credit-cards`
    - Make it public
 
 2. **Push your code to GitHub**
@@ -100,7 +100,7 @@ git push -u origin main
 ## Customization
 
 ### Update Site Name
-Find and replace "CardMatch" with your site name in:
+Find and replace "CardSnark" with your site name in:
 - `index.html` (logo, title, footer)
 - Update meta descriptions
 
