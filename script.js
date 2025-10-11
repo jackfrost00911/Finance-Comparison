@@ -136,3 +136,14 @@ document.querySelectorAll('.card-item, .category-card, .article-card').forEach(c
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(card);
 });
+
+// Load footer on all pages
+fetch('/Finance-Comparison/footer.html')
+  .then(response => {
+    if (!response.ok) throw new Error('Footer not found');
+    return response.text();
+  })
+  .then(html => {
+    document.body.insertAdjacentHTML('beforeend', html);
+  })
+  .catch(error => console.error('Error loading footer:', error));
