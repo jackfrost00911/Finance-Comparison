@@ -38,9 +38,9 @@ A professional credit card comparison website built with HTML, CSS, and JavaScri
 2. **Push your code to GitHub**
 git init
 git add .
-git commit -m "Initial commit - Finance-Comparison"
+git commit -m "Initial commit - cardsnark"
 git branch -M main
-git remote add origin https://github.com/jackfrost00911/Finance-Comparison.git
+git remote add origin https://github.com/jackfrost00911/cardsnark.git
 git push -u origin main
 
 
