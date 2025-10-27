@@ -138,7 +138,7 @@ document.querySelectorAll('.card-item, .category-card, .article-card').forEach(c
 });
 
 // Load footer on all pages
-fetch('/cardsnark/footer.html')
+fetch('/footer.html')
   .then(response => {
     if (!response.ok) throw new Error('Footer not found');
     return response.text();
