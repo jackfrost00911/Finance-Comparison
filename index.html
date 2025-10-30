@@ -100,14 +100,32 @@
         <div class="card-finder">
             <label for="cardType">What are you trying to accomplish here?</label>
             <select id="cardType">
-                <option value="">Pick your poison...</option>
-                <option value="cashback">Get cash back without jumping through hoops</option>
-                <option value="travel">Travel rewards that aren't a scam</option>
-                <option value="balance">Stop hemorrhaging money on 25% interest</option>
-                <option value="building">Build credit without selling a kidney</option>
-                <option value="nofee">Avoid paying $95 for "prestige"</option>
-            </select>
-            <button class="cta-button" onclick="findCards()">Show Me Cards That Don't Suck</button>
+  <option value="">Pick your poison...</option>
+  <option value="cashback">Get cash back without jumping through hoops</option>
+  <option value="travel">Travel rewards that aren't a scam</option>
+  <option value="balance">Stop hemorrhaging money on 25% interest</option>
+  <option value="building">Build credit without selling a kidney</option>
+  <option value="nofee">Avoid paying $95 for prestige</option>
+</select>
+<button class="cta-button" onclick="findCards()">Show Me Cards That Don't Suck</button>
+
+<script>
+  function findCards() {
+    const cardType = document.getElementById("cardType").value;
+    const urls = {
+      cashback: "/cashback-cards/",
+      travel: "/travel-cards/",
+      balance: "/balance-transfer/",
+      building: "/building-credit/",
+      nofee: "/no-annual-fee/"
+    };
+    if (cardType && urls[cardType]) {
+      window.location.href = urls[cardType];
+    } else {
+      alert("Come on, pick one. We have all day but you probably don't.");
+    }
+  }
+</script>
         </div>
     </section>
 
