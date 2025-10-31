@@ -73,13 +73,13 @@
             <h1>CardSnark</h1>
         </div>
         <ul class="nav-menu">
-            <li><a href="/Finance-Comparison/" class="active">Home</a></li>
-            <li><a href="/Finance-Comparison/cashback-cards/">Cash Back</a></li>
-            <li><a href="/Finance-Comparison/travel-cards/">Travel Rewards</a></li>
-            <li><a href="/Finance-Comparison/balance-transfer/">Balance Transfer</a></li>
-            <li><a href="/Finance-Comparison/business-cards/">Business</a></li>
-            <li><a href="/Finance-Comparison/learn/">Learn</a></li>
-            <li><a href="/Finance-Comparison/reviews/">Reviews</a></li>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/cashback-cards/">Cash Back</a></li>
+            <li><a href="/travel-cards/">Travel Rewards</a></li>
+            <li><a href="/balance-transfer/">Balance Transfer</a></li>
+            <li><a href="/business-cards/">Business</a></li>
+            <li><a href="/learn/">Learn</a></li>
+            <li><a href="/reviews/">Reviews</a></li>
         </ul>
         <button class="mobile-menu-toggle" aria-label="Toggle menu">
             <span></span>
@@ -100,46 +100,64 @@
         <div class="card-finder">
             <label for="cardType">What are you trying to accomplish here?</label>
             <select id="cardType">
-                <option value="">Pick your poison...</option>
-                <option value="cashback">Get cash back without jumping through hoops</option>
-                <option value="travel">Travel rewards that aren't a scam</option>
-                <option value="balance">Stop hemorrhaging money on 25% interest</option>
-                <option value="building">Build credit without selling a kidney</option>
-                <option value="nofee">Avoid paying $95 for "prestige"</option>
-            </select>
-            <button class="cta-button" onclick="findCards()">Show Me Cards That Don't Suck</button>
+  <option value="">Pick your poison...</option>
+  <option value="cashback">Get cash back without jumping through hoops</option>
+  <option value="travel">Travel rewards that aren't a scam</option>
+  <option value="balance">Stop hemorrhaging money on 25% interest</option>
+  <option value="building">Build credit without selling a kidney</option>
+  <option value="nofee">Avoid paying $95 for prestige</option>
+</select>
+<button class="cta-button" onclick="findCards()">Show Me Cards That Don't Suck</button>
+
+<script>
+  function findCards() {
+    const cardType = document.getElementById("cardType").value;
+    const urls = {
+      cashback: "/cashback-cards/",
+      travel: "/travel-cards/",
+      balance: "/balance-transfer/",
+      building: "/building-credit/",
+      nofee: "/no-annual-fee/"
+    };
+    if (cardType && urls[cardType]) {
+      window.location.href = urls[cardType];
+    } else {
+      alert("Come on, pick one. We have all day but you probably don't.");
+    }
+  }
+</script>
         </div>
     </section>
 
     <section class="categories">
         <h2>What Kind of Financial Masochism Are We Into Today?</h2>
         <div class="category-grid">
-    <a href="/Finance-Comparison/cashback-cards/" class="category-card">
+    <a href="/cashback-cards/" class="category-card">
         <div class="category-icon">💰</div>
         <h3>Cash Back Cards</h3>
         <p>Earn up to 5% back on every purchase</p>
     </a>
-    <a href="/Finance-Comparison/travel-cards/" class="category-card">
+    <a href="/travel-cards/" class="category-card">
         <div class="category-icon">✈️</div>
         <h3>Travel Rewards</h3>
         <p>Get free flights and hotel stays</p>
     </a>
-    <a href="/Finance-Comparison/balance-transfer/" class="category-card">
+    <a href="/balance-transfer/" class="category-card">
         <div class="category-icon">🔄</div>
         <h3>Balance Transfer</h3>
         <p>0% APR for up to 21 months</p>
     </a>
-    <a href="/Finance-Comparison/business-cards/" class="category-card">
+    <a href="/business-cards/" class="category-card">
         <div class="category-icon">💼</div>
         <h3>Business Cards</h3>
         <p>Build credit and earn rewards</p>
     </a>
-    <a href="/Finance-Comparison/bad-credit/" class="category-card">
+    <a href="/bad-credit/" class="category-card">
         <div class="category-icon">📈</div>
         <h3>Bad Credit</h3>
         <p>Rebuild your credit score</p>
     </a>
-    <a href="/Finance-Comparison/student-cards/" class="category-card">
+    <a href="/student-cards/" class="category-card">
         <div class="category-icon">🎓</div>
         <h3>Student Cards</h3>
         <p>Start building credit today</p>
@@ -159,7 +177,7 @@
                     <div class="stat"><span>Annual Fee:</span><strong>$95 (worth it if you travel)</strong></div>
                     <div class="stat"><span>APR:</span><strong>21.49%-28.49% (don't carry a balance)</strong></div>
                 </div>
-                <a href="/Finance-Comparison/reviews/chase-sapphire-preferred.html" class="learn-more">Read Full Review</a>
+                <a href="/reviews/chase-sapphire-preferred.html" class="learn-more">Read Full Review</a>
             </div>
 
             <div class="featured-card">
@@ -171,7 +189,7 @@
                     <div class="stat"><span>Annual Fee:</span><strong>$0 (as it should be)</strong></div>
                     <div class="stat"><span>APR:</span><strong>19.24%-29.24%</strong></div>
                 </div>
-                <a href="/Finance-Comparison/reviews/citi-double-cash.html" class="learn-more">Read Full Review</a>
+                <a href="/reviews/citi-double-cash.html" class="learn-more">Read Full Review</a>
             </div>
 
             <div class="featured-card">
@@ -183,7 +201,7 @@
                     <div class="stat"><span>Annual Fee:</span><strong>$325 (but $240 back in credits)</strong></div>
                     <div class="stat"><span>APR:</span><strong>Pay in full or don't get this</strong></div>
                 </div>
-                <a href="/Finance-Comparison/reviews/amex-gold.html" class="learn-more">Read Full Review</a>
+                <a href="/reviews/amex-gold.html" class="learn-more">Read Full Review</a>
             </div>
         </div>
     </section>
@@ -198,37 +216,37 @@
             <div class="footer-col">
                 <h4>Card Categories</h4>
                 <ul>
-                    <li><a href="/Finance-Comparison/cashback-cards/">Cash Back Cards</a></li>
-                    <li><a href="/Finance-Comparison/travel-cards/">Travel Rewards</a></li>
-                    <li><a href="/Finance-Comparison/balance-transfer/">Balance Transfer</a></li>
-                    <li><a href="/Finance-Comparison/business-cards/">Business Cards</a></li>
-                    <li><a href="/Finance-Comparison/student-cards/">Student Cards</a></li>
-                    <li><a href="/Finance-Comparison/bad-credit/">Bad Credit Cards</a></li>
+                    <li><a href="/cashback-cards/">Cash Back Cards</a></li>
+                    <li><a href="/travel-cards/">Travel Rewards</a></li>
+                    <li><a href="/balance-transfer/">Balance Transfer</a></li>
+                    <li><a href="/business-cards/">Business Cards</a></li>
+                    <li><a href="/student-cards/">Student Cards</a></li>
+                    <li><a href="/bad-credit/">Bad Credit Cards</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Resources</h4>
                 <ul>
-                    <li><a href="/Finance-Comparison/learn/">Credit Card Guides</a></li>
-                    <li><a href="/Finance-Comparison/tools/rewards-calculator/">Rewards Calculator</a></li>
-                    <li><a href="/Finance-Comparison/compare/">Compare Cards</a></li>
-                    <li><a href="/Finance-Comparison/blog/">Blog</a></li>
+                    <li><a href="/learn/">Credit Card Guides</a></li>
+                    <li><a href="/tools/rewards-calculator/">Rewards Calculator</a></li>
+                    <li><a href="/compare/">Compare Cards</a></li>
+                    <li><a href="/blog/">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Company</h4>
                 <ul>
-                    <li><a href="/Finance-Comparison/about/">About Us</a></li>
-                    <li><a href="/Finance-Comparison/contact.html">Contact</a></li>
-                    <li><a href="/Finance-Comparison/methodology/">Methodology</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/methodology/">Methodology</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Legal</h4>
                 <ul>
-                    <li><a href="/Finance-Comparison/privacy.html">Privacy Policy</a></li>
-                    <li><a href="/Finance-Comparison/terms.html">Terms of Service</a></li>
-                    <li><a href="/Finance-Comparison/disclosure.html">Affiliate Disclosure</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms of Service</a></li>
+                    <li><a href="/disclosure.html">Affiliate Disclosure</a></li>
                 </ul>
             </div>
         </div>
@@ -247,11 +265,11 @@
         function findCards() {
             const cardType = document.getElementById('cardType').value;
             const urls = {
-                cashback: '/Finance-Comparison/cashback-cards/',
-                travel: '/Finance-Comparison/travel-cards/',
-                balance: '/Finance-Comparison/balance-transfer/',
-                building: '/Finance-Comparison/building-credit/',
-                nofee: '/Finance-Comparison/no-annual-fee/'
+                cashback: '/cashback-cards/',
+                travel: '/travel-cards/',
+                balance: '/balance-transfer/',
+                building: '/building-credit/',
+                nofee: '/no-annual-fee/'
             };
 
             if (cardType && urls[cardType]) {
