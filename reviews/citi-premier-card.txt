@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Citi Premier® Review: Travel Rewards for Realistic Humans</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.7;
+            margin: 0 5%;
+        }
+        h1 { color: #2563eb; margin-top: 2rem; }
+        h2 { color: #764ba2; margin-top: 2em; }
+        ul { margin-left: 1.5em; }
+        .snark { color: #667eea; font-weight: 600; }
+        .disclaimer { font-size: 0.9rem; color: #888; margin-top: 2em; }
+    </style>
+</head>
+<body>
+    <h1>Citi Premier® Card Review: For Jetsetters Who Don’t Want to Sell a Kidney for Points</h1>
+    <p>
+        The <span class="snark">Citi Premier® Card</span> is for travelers who like rewards but hate complexity. It’s the “I don’t need a $695 fee and a velvet rope lounge, thanks” option. Earn big points, travel with style, and maybe even remember to use those transfer partners.
+    </p>
+    <h2>What’s Actually Worthwhile?</h2>
+    <ul>
+        <li><b>3x points on air travel, hotels, restaurants, supermarkets, and gas.</b> If you aren’t earning, you aren’t eating.</li>
+        <li><b>1x points on everything else</b>—so you always get something.</li>
+        <li><b>80,000 point bonus</b> for spending $4,000 in three months—time to book that “business” trip to Cancun.</li>
+        <li><b>$100 annual hotel savings credit</b> for bookings $500+—finally, actual money back.</li>
+        <li><b>$95 annual fee</b>—it’s not free, but it’s way less horrifying than most “premium” cards.</li>
+        <li>Transfer points to more than a dozen partners—useful if you like spreadsheets or just trust Citi’s travel portal.</li>
+    </ul>
+    <h2>Things That Could Be Better</h2>
+    <ul>
+        <li>No luxury lounge access—keep dreaming, travel influencer.</li>
+        <li>Complex point transfers, so bring your patience or ignore altogether.</li>
+        <li>Annual fee is still $95, but you’ll probably make it back with one decent trip.</li>
+    </ul>
+    <h2>Who Is This Card For?</h2>
+    <p>
+        If you want solid rewards, flexibility for flights and hotels, and hate paying through the nose for “luxury,” this card checks all the boxes. If you need concierge-level pampering, try Amex Platinum instead.
+    </p>
+    <h2>The Bottom Line</h2>
+    <p>
+        The <span class="snark">Citi Premier® Card</span> lets you travel smart (and kinda fancy) without blowing the budget on annual fees. It’s flexible, rewarding, and maybe… just maybe… the realistic travel card for 2025.
+    </p>
+    <p class="disclaimer">
+        *Not sponsored (but hey Citi, slide into the DMs). Always read the fine print, redeem your points, and book smart. Don’t let fees win.
+    </p>
+</body>
+</html>
