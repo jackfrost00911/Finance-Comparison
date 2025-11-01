@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 
 SITE_URL = "https://cardsnark.cc"
-EXTENSIONS = {".html"}  # add .xml, .css, .js etc if needed
+EXTENSIONS = {".html", ".css", ".js", ".md", ".txt", ".xml"}
 
 def find_files(base):
     for root, dirs, files in os.walk(base):
