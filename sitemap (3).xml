@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://cardsnark.cc/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Major Section Index Pages -->
+  <url>
+    <loc>https://cardsnark.cc/cashback-cards/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/travel-cards/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/balance-transfer/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/business-cards/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/bad-credit/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/bad-credit-cards/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/student-cards/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/no-annual-fee/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/learn/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/blog/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/tools/rewards-calculator.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/reviews/index.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://cardsnark.cc/blog/blog-5-card-myths.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Learn Section Individual Pages -->
+  <url>
+    <loc>https://cardsnark.cc/learn/budgeting-snark.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/learn/credit-works.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/learn/investing-snark.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/learn/save-money-snark.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cardsnark.cc/learn/spot-a-scam.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- All Review Pages from latest screenshot -->
+  <url><loc>https://cardsnark.cc/reviews/amex-gold-1.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/bank-americard.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/blue-cash-preferred.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/boa-customized-cash-rewards.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/capital-one-platinum-secured.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/capital-one-venture-x-1.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/chase-freedom-unlimited-1.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/chase-preferred-sapphire-1.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/citi-double-cash-1.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/citi-premier-card.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/discover-it-cash-back-3.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/discover-it-student-cash-back.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/ink-business-unlimited.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/us-bank-altitude-go.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/wells-fargo-active-cash.html</loc></url>
+  <url><loc>https://cardsnark.cc/reviews/wells-fargo-reflect-card.html</loc></url>
+
+  <!-- Core Site & Legal/Utility Pages -->
+  <url><loc>https://cardsnark.cc/contact.html</loc></url>
+  <url><loc>https://cardsnark.cc/disclosure.html</loc></url>
+  <url><loc>https://cardsnark.cc/faq.html</loc></url>
+  <url><loc>https://cardsnark.cc/footer.html</loc></url>
+  <url><loc>https://cardsnark.cc/privacy.html</loc></url>
+  <url><loc>https://cardsnark.cc/terms.html</loc></url>
+  <url><loc>https://cardsnark.cc/robots.txt</loc></url>
+  <url><loc>https://cardsnark.cc/sitemap.xml</loc></url>
+  <url><loc>https://cardsnark.cc/styles.css</loc></url>
+  <url><loc>https://cardsnark.cc/script.js</loc></url>
+
+</urlset>
