@@ -13,10 +13,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    
     <loc>https://cardsnark.cc/travel-cards/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
+    
     <loc>https://cardsnark.cc/balance-transfer/index.html</loc>
     <priority>0.8</priority>
   </url>
@@ -25,18 +27,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    
     <loc>https://cardsnark.cc/bad-credit/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cardsnark.cc/bad-credit-cards/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
+    
     <loc>https://cardsnark.cc/student-cards/index.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
+    
     <loc>https://cardsnark.cc/no-annual-fee/index.html</loc>
     <priority>0.8</priority>
   </url>
@@ -85,7 +86,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- All Review Pages from latest screenshot -->
+  <!-- All Review Pages -->
   <url><loc>https://cardsnark.cc/reviews/amex-gold-1.html</loc></url>
   <url><loc>https://cardsnark.cc/reviews/bank-americard.html</loc></url>
   <url><loc>https://cardsnark.cc/reviews/blue-cash-preferred.html</loc></url>
