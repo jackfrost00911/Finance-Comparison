@@ -26,10 +26,17 @@
             align-items: center; 
         }
         .logo { 
-            font-size: 1.5rem; 
-            font-weight: bold; 
-            color: #2563eb; 
-        }
+    /* These styles make the image align nicely */
+    display: flex;
+    align-items: center;
+}
+
+/* This new style controls your logo's size */
+.logo img {
+    height: 45px; /* You can adjust this height */
+    width: auto;  /* This keeps the image from stretching */
+}
+        
         .nav-menu { 
             display: flex; 
             list-style: none; 
