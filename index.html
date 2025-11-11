@@ -180,21 +180,11 @@ nav {
 <button class="cta-button" onclick="findCards()">Show Me Cards That Don't Suck</button>
 
 <script>
-  function findCards() {
-    const cardType = document.getElementById("cardType").value;
-    const urls = {
-      cashback: "/cashback-cards/",
-      travel: "/travel-cards/",
-      balance: "/balance-transfer/",
-      building: "/building-credit/",
-      nofee: "/no-annual-fee/"
-    };
     if (cardType && urls[cardType]) {
       window.location.href = urls[cardType];
     } else {
       alert("Come on, pick one. We have all day but you probably don't.");
     }
-  }
 </script>
         </div>
     </section>
