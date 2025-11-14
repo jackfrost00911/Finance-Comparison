@@ -21,6 +21,16 @@
     </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
     <h1>5 Credit Card Myths That Need to Die (Right Now)</h1>
     <p>
         Welcome to the wonderful world of credit cards—the plastic rectangle people love to hate and hate to understand. Let's torch five old-school myths that keep people broke, stressed, or living in fear of their next billing cycle.
@@ -58,5 +68,14 @@
     <p class="disclaimer">
         *No myths were harmed in the writing of this blog. Turns out, common sense works if you try it occasionally.
     </p>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

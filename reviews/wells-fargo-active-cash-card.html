@@ -21,6 +21,16 @@
     </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
     <h1>Wells Fargo Active Cash® Card Review: The 2% Card for People Who Hate Thinking</h1>
     <p>
         If you want your cash back without categories, headaches, or reading 32 pages of fine print, meet your new best friend: the <span class="snark">Wells Fargo Active Cash® Card</span>.
@@ -53,5 +63,14 @@
     <p class="disclaimer">
         *This review is 100% unsponsored. If Wells Fargo ever pays us, we’ll probably buy something dumb with the bonus. Terms apply; don't blame us if you don't read them.
     </p>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

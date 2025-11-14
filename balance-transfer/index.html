@@ -83,6 +83,16 @@
 
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
 
     <nav class="navbar">
         <div class="nav-container">
@@ -425,5 +435,14 @@
     </div>
 </footer>
 
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

@@ -21,6 +21,16 @@
     </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
     <h1>Citi Premier® Card Review: For Jetsetters Who Don’t Want to Sell a Kidney for Points</h1>
     <p>
         The <span class="snark">Citi Premier® Card</span> is for travelers who like rewards but hate complexity. It’s the “I don’t need a $695 fee and a velvet rope lounge, thanks” option. Earn big points, travel with style, and maybe even remember to use those transfer partners.
@@ -51,5 +61,14 @@
     <p class="disclaimer">
         *Not sponsored (but hey Citi, slide into the DMs). Always read the fine print, redeem your points, and book smart. Don’t let fees win.
     </p>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

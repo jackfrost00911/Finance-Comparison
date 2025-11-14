@@ -63,6 +63,16 @@
   </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
   <header class="header">
     <nav>
       <a href="/">Home</a> |
@@ -108,5 +118,14 @@
       &copy; 2025 CardSnark.cc | Because financial literacy shouldn’t be this funny.
     </div>
   </main>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

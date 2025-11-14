@@ -21,6 +21,16 @@
     </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
     <h1>U.S. Bank Altitude Go Visa Signature® Card Review: Let the Binge-Watching Begin</h1>
     <p>
         If your idea of a loyalty program means never missing dinner and blowing paychecks on Netflix, the <span class="snark">U.S. Bank Altitude Go</span> is basically a rewards card built for 2025 millennials—and Gen Zs who want 4x points eating out. Don’t expect airport lounges, but you’ll never pay for Spotify again.
@@ -51,5 +61,14 @@
     <p class="disclaimer">
         *No affiliate links. Terms may change faster than Netflix shows get canceled. Read the fine print before you join the points parade.
     </p>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

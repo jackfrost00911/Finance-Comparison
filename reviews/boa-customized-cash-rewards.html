@@ -21,6 +21,16 @@
     </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
     <h1>Bank of America® Customized Cash Rewards Review: Spin the Wheel, Pick Your Perks</h1>
     <p>
         Not sure if you want cash back on gas, groceries, or online shopping? With the <span class="snark">Bank of America® Customized Cash Rewards Card</span>, you don’t have to decide—just change categories whenever real life changes (which is weekly).
@@ -51,5 +61,14 @@
     <p class="disclaimer">
         *Author owns zero BofA stock and isn’t paid for this snark. Check terms before you apply; rotating categories and bank policies change like the weather.
     </p>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

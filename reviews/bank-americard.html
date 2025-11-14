@@ -21,6 +21,16 @@
     </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
     <h1>BankAmericard® Credit Card Review: Procrastinators, Rejoice!</h1>
     <p>
         Got a pile of interest and a sinking feeling every time you check your balance? The <span class="snark">BankAmericard®</span> is the uncool but reliable friend
@@ -50,5 +60,14 @@
     <p class="disclaimer">
         *This snarky review is not sponsored. But if Bank of America wants to pay us, we’ll probably just use it to pay off last month’s balance. Read all terms and watch those deadlines.
     </p>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

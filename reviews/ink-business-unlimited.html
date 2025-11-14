@@ -21,6 +21,16 @@
     </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
     <h1>Ink Business Unlimited® Credit Card Review: When Your Side Hustle Deserves Main Character Energy</h1>
     <p>
         If your “business” is mostly a lot of receipts, late nights, and maybe a couple of midnight pizza orders, the <span class="snark">Ink Business Unlimited®</span> is the card you want. It’s the freelancer, consultant, and small biz go-to: simple, unlimited 1.5% cash back on everything, with as little fine print as possible. Finally, a business card that doesn’t ask if you have a fax machine.
@@ -50,5 +60,14 @@
     <p class="disclaimer">
         *This review is fresh, snarky, and not sponsored by Chase. Always check the details before you apply. Don’t fire your accountant—but maybe buy them coffee with your cash back.
     </p>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

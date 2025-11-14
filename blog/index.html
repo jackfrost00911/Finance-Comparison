@@ -22,6 +22,16 @@
     </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
     <h1>CardSnark Blog</h1>
     <p class="intro">
         Welcome to the CardSnark Blog, where credit cards get roasted, myths get shredded, and the financial industry’s corporate nonsense gets called out—with actual personality. We break down the fine print, untangle the weird fees, and help you hack rewards—all with a healthy dose of sarcasm and real talk.
@@ -54,5 +64,14 @@
         <span class="snark">Ready to laugh, learn, and take control?</span>
         Dive into our latest articles or drop us a line with your own financial horror story. We promise to roast fairly.
     </p>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

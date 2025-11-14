@@ -21,6 +21,16 @@
     </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
     <h1>Discover it® Student Cash Back Review: Training Wheels for Your Wallet</h1>
     <p>
         For college students who want to build credit without blowing it all on late-night pizza, the <span class="snark">Discover it® Student Cash Back</span> is basically a starter pack for adulthood. This is one of the few things in college you won’t regret in five years.
@@ -50,5 +60,14 @@
     <p class="disclaimer">
         *Not funded by Discover—sadly. Read those rotating categories, live your best college life, and maybe stop spending cash back on vending machine burritos.
     </p>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>

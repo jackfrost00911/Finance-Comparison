@@ -21,6 +21,16 @@
     </style>
 </head>
 <body>
+    <!-- Load Header -->
+    <div id="header-container"></div>
+    <script>
+    fetch('/includes/header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+    </script>
+
     <h1>Wells Fargo Reflect® Card Review: Longest 0% Intro APR in 2025 (Because, Yes, You Need More Time)</h1>
     <p>
         If you've ever thought, "If only adulting came with a pause button," the <span class="high">Wells Fargo Reflect® Card</span> basically exists for you. This card offers one of the longest 0% intro APR periods on the market, so you can drag your feet on paying down that big purchase (or old debt) and not get smacked with interest straight away. Is this <b>financial wizardry</b>? No, it’s just a refreshingly simple lifeline. For once.
@@ -49,5 +59,14 @@
     <p class="disclaimer">
         *This review is pure, unfiltered opinion and makes no guarantees about your self-control. Always pay attention to those post-intro APR rates. Terms apply—don’t whine if you skip the details.
     </p>
+    <!-- Load Footer -->
+    <div id="footer-container"></div>
+    <script>
+    fetch('/includes/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 </body>
 </html>
