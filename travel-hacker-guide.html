@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Download: The Travel Hacker's Guide to Free Flights | CardSnark</title>
+    <meta name="description" content="Download our free guide and learn how to fly business class for pocket change. No BS, just real strategies that work.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Guide: How to Fly for (Almost) Free">
+    <meta property="og:description" content="The snarky, no-BS guide to getting 60,000+ points and flying business class on a budget.">
+    <meta property="og:image" content="https://cardsnark.cc/images/travel-guide-cover.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Guide: How to Fly for (Almost) Free">
+    <meta name="twitter:description" content="The snarky, no-BS guide to getting 60,000+ points and flying business class on a budget.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d1b4e 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        /* Simple Header */
+        .simple-header {
+            padding: 1.5rem 5%;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .simple-header img {
+            height: 40px;
+            width: auto;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 5%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        
+        .hero-content {
+            padding-right: 2rem;
+        }
+        
+        .eyebrow {
+            display: inline-block;
+            background: rgba(255, 215, 0, 0.15);
+            color: #ffd700;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        
+        .highlight {
+            color: #ffd700;
+        }
+        
+        .subheadline {
+            font-size: 1.5rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 2rem;
+            line-height: 1.4;
+        }
+        
+        /* Benefits List */
+        .benefits {
+            list-style: none;
+            margin: 2rem 0;
+        }
+        
+        .benefits li {
+            padding: 1rem 0;
+            padding-left: 2.5rem;
+            position: relative;
+            font-size: 1.125rem;
+            color: rgba(255,255,255,0.95);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .benefits li:last-child {
+            border-bottom: none;
+        }
+        
+        .benefits li::before {
+            content: "✈️";
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+        }
+        
+        .benefits strong {
+            color: #ffd700;
+        }
+        
+        /* Form Section */
+        .form-container {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+            position: sticky;
+            top: 2rem;
+        }
+        
+        .form-container h3 {
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+        
+        .form-subtext {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 10px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.05);
+            color: white;
+            transition: all 0.3s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #ffd700;
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1);
+        }
+        
+        .form-group input::placeholder {
+            color: rgba(255,255,255,0.4);
+        }
+        
+        .cta-button {
+            width: 100%;
+            padding: 1.25rem 2.5rem;
+            background: #ffd700;
+            color: #1a1a2e;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.125rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(255, 215, 0, 0.6);
+            background: #ffed4e;
+        }
+        
+        .cta-button:active {
+            transform: translateY(0);
+        }
+        
+        .privacy-note {
+            text-align: center;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.6);
+            margin-top: 1rem;
+            line-height: 1.4;
+        }
+        
+        .privacy-note a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        
+        /* Social Proof */
+        .social-proof {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1.25rem;
+            background: rgba(255,215,0,0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(255,215,0,0.3);
+        }
+        
+        .social-proof-text {
+            font-size: 1rem;
+            color: #ffd700;
+            font-weight: 600;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .features-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        
+        .feature-card:hover {
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-5px);
+            border-color: rgba(255,215,0,0.3);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.375rem;
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+        
+        .feature-card p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        /* Testimonial */
+        .testimonial {
+            background: rgba(255,255,255,0.05);
+            border-left: 4px solid #ffd700;
+            padding: 2rem;
+            margin: 4rem auto;
+            border-radius: 12px;
+            max-width: 800px;
+        }
+        
+        .testimonial-text {
+            font-size: 1.25rem;
+            font-style: italic;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        
+        .testimonial-author {
+            color: #ffd700;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        /* FAQ Section */
+        .faq {
+            max-width: 800px;
+            margin: 4rem auto;
+        }
+        
+        .faq h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .faq-item {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .faq-item h3 {
+            color: #ffd700;
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .faq-item p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.6;
+        }
+        
+        /* Simple Footer */
+        .simple-footer {
+            text-align: center;
+            padding: 2rem 5%;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 4rem;
+        }
+        
+        .simple-footer p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.875rem;
+        }
+        
+        .simple-footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        
+        /* Success Message */
+        .success-message {
+            display: none;
+            background: rgba(34, 197, 94, 0.2);
+            border: 2px solid #22c55e;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+        
+        .success-message.show {
+            display: block;
+            animation: slideIn 0.5s ease;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .success-message h4 {
+            color: #22c55e;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hero-content {
+                padding-right: 0;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subheadline {
+                font-size: 1.25rem;
+            }
+            
+            .form-container {
+                position: static;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Simple Header -->
+    <header class="simple-header">
+        <a href="/">
+            <img src="/images/cardsnark_profile_pic.jpg" alt="CardSnark">
+        </a>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">🎁 Free Download</span>
+                <h1>Stop Paying $800 for Flights Like a <span class="highlight">Chump</span></h1>
+                <p class="subheadline">The snarky, no-BS guide to flying business class for pocket change. (For people who passed 7th-grade math.)</p>
+                
+                <ul class="benefits">
+                    <li><strong>Get 60,000-100,000 points</strong> just for signing up for the right cards (yes, really)</li>
+                    <li><strong>Book business class to Europe</strong> for what economy costs the peasants</li>
+                    <li><strong>Master airport lounge access</strong> so you can eat free cheese and judge people</li>
+                    <li><strong>Avoid rookie mistakes</strong> that flush your points down the toilet</li>
+                    <li><strong>Never pay full price</strong> for a flight again (your Instagram followers will hate you)</li>
+                </ul>
+                
+                <div class="social-proof">
+                    <p class="social-proof-text">📚 Join 10,000+ smart travelers who downloaded this guide</p>
+                </div>
+            </div>
+            
+            <div class="form-side">
+                <div class="form-container">
+                    <h3>Get Your Free Guide Now</h3>
+                    <p class="form-subtext">Instant download. No spam. Just travel hacking gold.</p>
+                    
+                    <form id="leadForm">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="What should we call you?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+                        
+                        <button type="submit" class="cta-button">Send Me The Free Guide</button>
+                        
+                        <p class="privacy-note">🔒 We respect your privacy. Unsubscribe anytime. No weird stuff. Read our <a href="/privacy.html">privacy policy</a>.</p>
+                    </form>
+                    
+                    <div class="success-message" id="successMessage">
+                        <h4>✅ Check Your Email!</h4>
+                        <p>Your guide is on its way. Check your inbox (and spam folder) in the next few minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonial -->
+        <div class="testimonial">
+            <p class="testimonial-text">"I saved $2,400 on flights to Japan using the strategies in this guide. My coworkers think I got a raise. I just got smarter about credit cards."</p>
+            <p class="testimonial-author">— Sarah M., Travel Hacker</p>
+        </div>
+        
+        <!-- Features Section -->
+        <div class="features">
+            <h2>What's Inside This <span class="highlight">Game-Changing</span> Guide?</h2>
+            <p class="features-subtitle">10 chapters of snarky, actionable advice that'll make you wonder why you've been overpaying for flights this whole time.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Welcome Bonuses</h3>
+                    <p>How to get $500-$1,000 in free flights just for signing up. (It's literally that simple.)</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✈️</div>
+                    <h3>Point Transfers</h3>
+                    <p>The secret sauce that turns 60,000 points into a $2,000 business class seat. Math is beautiful.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Booking Strategy</h3>
+                    <p>When to book, where to look, and how to not screw it up. (Yes, there's a wrong way.)</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Which Cards Don't Suck</h3>
+                    <p>A comprehensive review of cards that actually deliver value vs. marketing garbage.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🍾</div>
+                    <h3>Lounge Life</h3>
+                    <p>How to access airport lounges and live your best life while everyone else eats $12 sad sandwiches.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚠️</div>
+                    <h3>Avoid These Mistakes</h3>
+                    <p>Common screw-ups that make you look stupid and waste your points. Don't be that person.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="faq">
+            <h2>Questions You Might Have</h2>
+            
+            <div class="faq-item">
+                <h3>Is this actually free?</h3>
+                <p>Yes. Completely free. No credit card required. We just want your email so we can send you the guide and occasionally tell you about new card offers. You can unsubscribe anytime.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Will this hurt my credit score?</h3>
+                <p>Nope. If you follow the strategies in the guide and pay your bills on time, getting multiple cards can actually improve your credit score. We explain exactly how in Chapter 1.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do I need good credit to use these strategies?</h3>
+                <p>For the best travel cards, you'll need decent credit (typically 670+). But the guide includes options for building credit first if you're not there yet.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Is this one of those scammy "get rich quick" schemes?</h3>
+                <p>Absolutely not. This is using credit card welcome bonuses the way they're designed to be used. Banks want customers. They pay you to sign up. It's that simple. No loopholes, no sketchy stuff.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Footer -->
+    <footer class="simple-footer">
+        <p>© 2025 CardSnark | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms</a></p>
+        <p>Rewards that actually exist, not marketing fantasies.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const email = document.getElementById('email').value;
+            
+            // Here's where you'll integrate with your email service
+            // For now, we'll show the success message
+            
+            // INTEGRATION OPTIONS:
+            
+            // Option 1: ConvertKit
+            /*
+            fetch('https://api.convertkit.com/v3/forms/YOUR_FORM_ID/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    api_key: 'YOUR_API_KEY',
+                    email: email,
+first_name: firstName
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('leadForm').style.display = 'none';
+                document.getElementById('successMessage').classList.add('show');
+            });
+            */
+            
+            // Option 2: Mailchimp
+            /*
+            fetch('YOUR_MAILCHIMP_ENDPOINT', {
+                method: 'POST',
+                body: JSON.stringify({
+                    email_address: email,
+                    status: 'subscribed',
+                    merge_fields: {
+                        FNAME: firstName
+                    }
+                })
+            });
+            */
+            
+            // Option 3: Your own backend
+            /*
+            fetch('/api/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    firstName: firstName,
+                    email: email
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('leadForm').style.display = 'none';
+                document.getElementById('successMessage').classList.add('show');
+            });
+            */
+            
+            // For demo purposes, just show success message
+            console.log('Form submitted:', { firstName, email });
+            document.getElementById('leadForm').style.display = 'none';
+            document.getElementById('successMessage').classList.add('show');
+            
+            // In production, this would trigger your email automation
+        });
+    </script>
+</body>
+</html>
+   
